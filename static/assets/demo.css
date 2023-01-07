@@ -1,0 +1,53 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("../img/giphy.gif");
+    background-size: cover;
+    min-height: 100%;
+    text-align: center;
+    color: rgb(204, 218, 235);
+}
+
+a span {
+    position: relative;
+    color: #fff;
+    font-size: 23px;
+    font-family: Arial;
+}
+
+a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: rgb(115, 177, 240);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+a .liquid::after,
+a .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+a .liquid::before {
+    border-radius: 55%;
+    background: rgba(31, 44, 84, 1);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+    border-radius: 40%;
+    background: rgba(31, 44, 84, .5);
+    animation: animate 10s linear infinite;
+}
+
+a:hover .liquid {
+    top: -120px;
+}

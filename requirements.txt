@@ -1,0 +1,10 @@
+matplotlib
+scipy
+opencv-python
+keras
+numpy
+flask
+flask-cors
+tensorflow
+pygame
+pyrebase4
